@@ -23,9 +23,19 @@ p{
     text-align: justify;
 }
 
+    /* Alterações na fonte dos textos */
 p:first-line{
     font-size: 1.17em;
     font-variant: small-caps;
     font-weight: bolder;
     font-style: italic;
+}
+    /* Colocamos cor no HR */
+hr{
+    border-color: #C0262C;
+}
+
+    /* A função font-family escolhe fontes, porém elas só serão utilizadas caso o usuário use alguma delas em seu aparelho */
+body{
+    font-family: Arial, Helvetica, sans-serif;
 }
