@@ -178,4 +178,40 @@ th, td {
         border: #000 solid 1px;
     }
 
+    #banhoEtosa fieldset label.labelSimples{
+        display: inline;
+        float: none;
+    }
+     
+    #banhoEtosa p{
+        text-align: left;
+    }
+     
+    #banhoEtosa p:first-line {
+        font-size: inherit;
+        font-variant: inherit;
+        font-weight: inherit;
+        font-style: inherit;
+    }
+     
+    #banhoEtosa h2 {
+        background: #fef84f url(multimidia/postit.jpg) no-repeat top left;
+        color: #000;
+        padding:35px;
+        /* padding: 35 para cada um dos 4 lados tamamho do postit: 277x185px*/
+        width: 207px;
+        /*35+35=70 > 277-70=207 */
+        height: 115px;
+        /*35+35=70 > 185-70=115*/
+        font-size: 1.3125em;
+        /*21/16=1.3125em */
+        letter-spacing: .07em;
+    }
 
+    #quemSomos main img {
+        float: left;
+        margin: 0 20px 20px 0;
+        padding: 10px;
+        border: solid #c0262c thin;
+        background-color: #fff;
+    }
