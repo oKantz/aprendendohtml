@@ -2,132 +2,120 @@
 
 <html lang="pt-br">
 
-
 <head> 
 
 <meta charset="utf-8">
 
 <title>Meu amigo cão - Petshop</title>
 
+<script src="interacao/html5shiv.min.js"> </script>
 
-
+<link href="estilo.css" rel="stylesheet" type="text/css";>
 <style>
 
+#curiosidades main h2{
+    background-color: #C0262C;
+    background-image: url(multimidia/importante-saber.jpg), url(multimidia/back-bolinha.gif);
+    background-repeat: no-repeat, repeat;
+    background-position: center right, center center;
+    width: 470px;
+    padding: 61px 400px 61px 100px;
+    color: #ffffff;
+    font-size: 2.5em ;
+    letter-spacing: .1em;
+}
 
-#curiosidades h2{
-        background-color: #c0262c;
-        background-image: url(multimidia/importante-saber.jpg), url(multimidia/back-bolinha.gif);
-        background-repeat: no-repeat, repeat;
-        background-position: center right, center center;
-        color: #FFFFFF;
-        font-size: 2.5em;
-        letter-spacing: .1em;
+#curiosidades main figure{
+    border: #c0262c solid thin;
+    border-radius: 35px 35px 0 0;
+    padding: 20px 0;
+    text-align: center;
+}
+#curiosidades main ul li{
+    list-style-type: none;
+    list-style-image: url(multimidia/ossinho.png);
+list-style-position: inside;
+    margin:30px 0;
+}
 
-        width: 470px;
-        padding: 61px 400px 61px 100px;
-    }
+#curiosidades main figcaption {
+    background-color: #C0262C;
+    padding: 7px 0;
+    color: #ffffff;
+    font-size: 1.5em;
+}
 
-    #curiosidades figcaption{
-        background-color: #c0262c;
-        padding: 7px 0;
-        color: #FFFFFF;
-        font-size: 1.5em;
-    }
+#curiosidades main dt {
+    color:#fff;
+    background-color: #c0262c;
+    padding: 7px;
+}
 
-    #curiosidades figure{
-        border: #c0262c solid thin;
-        border-radius: 35px 35px 0 0;
-        padding: 20px 0 0;
-        text-align: center;
-    }
+#curiosidades main ul li{
+    list-style-type: none;
+    list-style-image:url(multimidia/ossinho.png);
+list-style-position: inside;
+    margin: 30px 0;
 
-    #curiosidades ul li{
-        list-style-type: none;
-        list-style-image: url(multimidia/ossinho.png);
-        list-style-position: inside;
-        margin: 30px 0;
-    }
-
-    #curiosidades dt {
-        color: #fff;
-        background-color: #c0262c;
-        padding: 7px;
-
-    }
-
-
-    #curiosidades dd{
-        border: thin #c0262c solid;
-        border-radius: 0 0 25px 25px;
-        margin-top: -3px;
-        margin-bottom: 30px;
-        padding: 20px 20px 0;
-    }
-
-    #curiosidades ol{
-        list-style-type: none;
-        white-space: pre;
-        line-height: .9em;
-        counter-reset: contador;
-    }
-
-    #curiosidades ol li:before{
-        color: #999999;
-        counter-increment: contador;
-        content: "Questão " counter(contador)": ";
-
-    }
-
-    #curiosidades ul li a{
-        text-decoration: none;
-        color: #c0262c;
-        font-weight: bold;
-        padding: 7px;
-
-    }
-
-    #curiosidades ul li a:hover{
-        text-decoration: underline;
-    }
-
-    #curiosidades dd a[target="_blank"]{
+}
+#curiosidades main dt {
+    color: #ffff;
+    background-color: #C0262C;
+    padding: 7px;
+}
+#curiosidades main dd{
+    border: thin #C0262C solid;
+    border-radius: 0 0 25px 25px;
+    margin-top: -3px;
+    margin-bottom: 30px;
+    padding: 20px 20px 0;
+}
+#curiosidades main ol {
+    list-style-type: none;
+    white-space: pre;
+    line-height: .9em;
+    /*definir a variavel de contagem */
+    counter-reset: contador;
+}
+#curiosidades main ol li:before{
+    color: #999999;
+    /*incrementar a variavel em 1*/
+    counter-increment: contador;
+    /*usar o numero do contador como conteudo*/
+    content: "Questão"counter(contador)"\00BB";
+}
+#curiosidades main ul li a {
     text-decoration: none;
-    color: #c0262c;
+    color:#C0262C;
+    font-weight: bold;
+    padding: 7px;
+}
+#curiosidades main ul li a:hover {
+    text-decoration: underline;
+}
+#curiosidades main dd a[target="_blank"] {
+    text-decoration: none;
+    color:#C0262C;
     font-weight: bold;
     padding: 7px;
     display: inline-block;
+}
+#curiosidades main dd a[target="_blank"]:hover {
+    text-decoration: underline;
+}
+#curiosidades main dd a[href="#top"] {
+    text-decoration: none;
+    color:#C0262C;
+    font-weight: bold;
+    padding: 7px 0 7px 30px;
+    background: url(multimidia/seta-voltar-hover.png) no-repeat left center;
+}
+#curiosidades maindd a[href="#top"]:hover {
+    text-decoration: underline;
+    background: url(multimidia/seta-voltar-hover.png) no-repeat left center;
+}
+</style>
 
-
-    }
-
-    #curiosidades dd a[target="_blank"]:hover{
-
-        text-decoration: underline;
-    }
-
-    #curiosidades dd a[href="#top"]{
-
-        text-decoration: none;
-        color: #c0262c;
-        font-weight: bold;
-        padding: 7px 0 7px 30px;
-        background: url(multimidia/seta-voltar.png) no-repeat left center;
-    }
-
-    #curiosidades dd a[href="#top"]:hover{
-
-        text-decoration: underline;
-        background: url(multimidia/seta-voltar-hover.png) no-repeat left center;
-    }
-
-    #curiosidades h1{
-        color: #c0262c;
-        font-size: 2.5em;
-        border-bottom: #c0262c solid thin;
-        padding-bottom: 7px;
-    }
-
-    </style>
 
 </head>
 
@@ -135,19 +123,49 @@
 
 <body id="curiosidades">
 
+    <header>
 
-<a href="index.html">Home</a>
+        <h1>Meu amigo cão - Petshop</h1>
+    
+        <div id="anuncio"> 
+            <img src="multimidia/anuncio-cantinho-feliz-h.jpg" alt="anúncio -
+            cantinho feliz, hotel para cachorro">
+        </div>
+    
+        <section>
+            <p><a href="boletim.html"> Assine o boletim mensal</a></p>
+    
+            <p>nos acompanhe:</p>
+            
+            <figure>
+                <a href="#"><img src="multimidia/ms-facebook.gif" alt="facebook"></a>
+                <a href="#"><img src="multimidia/ms-twitter.gif" alt="twitter"></a>
+                <a href="#"><img src="multimidia/ms-youtube.gif" alt="youtube"></a>
+                <a href="#"><img src="multimidia/ms-pinterest.gif" alt="pinterest"></a>
+                <a href="#"><img src="multimidia/ms-gmais.gif" alt="google"></a>
+            </figure>
+            </section>
+        </header>
+    
+    <nav>
+    
+    <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="quem-somos.html">Quem somos</a></li>
+    <li><a href="produtos.html">Produtos</a></li>
+    <li><a href="banho-e-tosa.html">Banho e Tosa</a></li>
+    <li><a href="curiosidades.html">Curiosidades</a></li>
+    </ul>
+    
+    </nav>
 
+<main>
 <h1>
 Qual a melhor raça de cachorros para crianças?
 </h1>
 
 
-<h2>
-Antes de mais nada é importante que você tenha em mente a resposta para algumas questões:
-</h2>
-
-
+<h2>Antes de mais nada é importante que você tenha em mente a resposta para algumas questões:</h2>
 
 <ol>
 
@@ -302,6 +320,10 @@ Este é um cão resistente com uma maneira amigável, assertivo. Inteligente e a
 </dd>
 </dl>
 
+</main>
+<footer>
+    <p>Atendimento:atendimento@meuamigocaopetshop.com (0XX) 99999-9999 / (0XX) 88888-8888</p>
+</footer>
 </body>
 
 </html>
