@@ -1,17 +1,124 @@
 
+/*estrutura */
+body{
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header h1{
+    width: 240px;
+    float: left;
+    background-image: url(multimidia/meu-amigo-cao-petshop-header.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 200px; 
+    text-indent: -1000px;
+    margin-bottom: 0px;
+}
+
+header #anuncio{
+    width: 510px;
+    float: left;
+    margin: 80px auto auto;
+    padding-top: 0px;
+}
+
+header section{
+    padding-top: 70px;
+}
+
+header section a[href="boletim.html"]{
+    border: solid #c0262c thin;
+    padding: 15px;
+    border-radius: 15px;
+    color: #c0262c;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+header section p{
+    color: #999999;
+    margin: 33px auto 7px;
+
+}
+
+header section figure {
+    width: 100%;
+    margin: 0px;
+}
+
+header section figure a {
+    padding: 25px 5px 0;
+    border: none;
+}
+
+header section figure a:first-child{
+    padding: 25px 5px 0 0;
+    
+
+}
+
+header section figure a:last-child{
+    padding: 25px 0 0 5px;
+}
+
+nav{
+    background-color: #000;
+    overflow: auto;
+    clear: both;
+    margin-top: 10px;
+}
+
+nav ul{
+    list-style: none;
+    padding-left: 0px;
+    margin-top: 1px;
+}
+
+nav ul li{
+    float: left;
+}
+
+nav ul a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: 8px 50px;
+    line-height: 2em;
+}
+#inicial a[href="index.html"],
+#quemSomos a[href="quem-somos.html"],
+#produtos a[href="produtos.html"],
+#banhoEtosa a[href="banho-e-tosa.html"],
+#curiosidades a[href="curiosidades.html"]{
+    background-color: #C0262C;
+}
+
+#inicial aside{
+    width: 230px;
+    float: left;
+    margin: 30px 25px 10px;
+}
+
+#inicial main{
+    width: 490px;
+    float: left;
+    margin: 30px 25px 10px;
+}
 /* Mudar a cor de um parágrafo */
 /* p {
 color: #990099;
 
 } */
 
-h1{
+main h1{
 color: #C0262C;
 
 }
 
 
-h2{
+main h2{
 font-size: 1.75em; /* 40/16=2.5 */;
 background: #C0262C url(multimidia/back-bolinha.gif) repeat top center;
 color: #fff;
@@ -22,21 +129,21 @@ width: 316px;
 }
 
 
-p{
+main p{
     font-size: 1.1em;
     line-height: 1.3em;
     text-align: justify;
 }
 
     /* Alterações na fonte dos textos */
-p:first-line{
+main h2+p:first-line{
     font-size: 1.17em;
     font-variant: small-caps;
     font-weight: bolder;
     font-style: italic;
 }
     /* Colocamos cor no HR */
-hr{
+main hr{
     border-color: #C0262C;
 }
 
@@ -215,3 +322,30 @@ th, td {
         border: solid #c0262c thin;
         background-color: #fff;
     }
+
+#obrigado main p img{
+    float: left;
+    margin: 0 20px 20px 0;
+    padding: 10px;
+    border: solid #c0262c thin;
+    background-color: #fff;
+}
+
+#destaqueObrigado {
+    position: relative;
+    border: solid #c0262c 1px;
+    border-radius: 0 25px;
+    padding: 5px 25px;
+    margin: 20px 0;
+}
+
+#obrigado #lacinho{
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    -webkit-transform: rotate(30deg);
+    -moz-transform: rotate(30deg);
+    -ms-transform: rotate(30deg);
+    -o-transform: rotate(30deg);
+    transform: rotate(30deg);
+}
