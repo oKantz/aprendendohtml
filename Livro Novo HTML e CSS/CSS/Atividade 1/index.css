@@ -1,27 +1,51 @@
+/* Aplica a todas as tags e elementos da página */
 * {
+    /* Define a família de fontes como sans-serif para todos os elementos */
     font-family: sans-serif;
 }
-h3{
+
+/* Estiliza todas as tags <h3> */
+h3 {
+    /* Define a cor do texto dos elementos <h3> para um tom de verde-azulado (#1a6868) */
     color: #1a6868;
 }
-li::marker{
+
+/* Estiliza o marcador de itens de lista (<li>) */
+li::marker {
+    /* Define a cor do marcador dos itens de lista para o mesmo tom de verde-azulado (#1a6868) */
     color: #1a6868;
+    /* Torna o marcador negrito */
     font-weight: bold;
+    /* Aplica estilo itálico ao marcador */
     font-style: italic;
 }
-li{
+
+/* Estiliza os elementos <li> (itens de lista) */
+li {
+    /* Define o espaçamento entre linhas dos itens de lista para 30px */
     line-height: 30px;
 }
-input[type="checkbox"]:checked + p{
+
+/* Estiliza parágrafos que seguem um checkbox marcado */
+input[type="checkbox"]:checked + p {
+    /* Adiciona um risco no texto do parágrafo se o checkbox correspondente estiver marcado */
     text-decoration: line-through;
 }
-li > input[type="checkbox"], li > p{
+
+/* Estiliza os checkboxes e parágrafos dentro de itens de lista (<li>) */
+li > input[type="checkbox"], li > p {
+    /* Exibe o checkbox e o parágrafo na mesma linha, um ao lado do outro */
     display: inline;
 }
-li > p{
+
+/* Estiliza os parágrafos dentro de itens de lista (<li>) */
+li > p {
+    /* Define a cor do texto dos parágrafos como preto, sobrepondo qualquer outro estilo aplicado */
     color: black !important;
 }
 
+/* Estiliza todas as tags <h1> */
 h1 {
+    /* Define a cor do texto dos elementos <h1> para um tom de verde-azulado mais claro (#12787c) */
     color: #12787c;
 }

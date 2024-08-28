@@ -1,40 +1,67 @@
-*{
+/* Aplica a todos os elementos da página */
+* {
+    /* Define a família de fontes como Arial, Helvetica, ou sans-serif (sem serifa) */
     font-family: Arial, Helvetica, sans-serif;
 }
 
-#topo > .capa{
-    width:25%;
+/* Estiliza o elemento com id "topo" e a classe "capa" */
+#topo > .capa {
+    /* Define a largura para 25% do elemento pai */
+    width: 25%;
 }
 
+/* Estiliza o elemento com id "topo" e a classe "info" */
 #topo > .info {
+    /* Define a largura para 70% do elemento pai */
     width: 70%;
+    /* Faz com que o elemento seja exibido em linha, ocupando apenas o espaço necessário */
     display: inline-block;
 }
 
-#lista > ol > li{
+/* Estiliza os itens de lista <li> dentro de uma lista ordenada <ol>, que por sua vez está dentro do elemento com id "lista" */
+#lista > ol > li {
+    /* Define a altura da linha para 2rem (2 vezes a altura padrão da fonte) */
     line-height: 2rem;
 }
 
-#lista > ol > li > *{
+/* Estiliza todos os elementos filhos dentro de cada item de lista <li> */
+#lista > ol > li > * {
+    /* Define o modelo de box-sizing como content-box, onde o padding e a borda não são incluídos nas dimensões do elemento */
     box-sizing: content-box;
+    /* Faz com que os elementos filhos dentro do item de lista sejam exibidos em linha, ocupando apenas o espaço necessário */
     display: inline-block;
 }
-#lista > ol > li .artista{
+
+/* Estiliza os elementos com a classe "artista" dentro de cada item de lista <li> */
+#lista > ol > li .artista {
+    /* Define a largura para 40% do elemento pai */
     width: 40%;
 }
-#lista > ol > li .musica{
+
+/* Estiliza os elementos com a classe "musica" dentro de cada item de lista <li> */
+#lista > ol > li .musica {
+    /* Define a largura para 40% do elemento pai */
     width: 40%;
 }
-#lista > ol > li .duracao{
+
+/* Estiliza os elementos com a classe "duracao" dentro de cada item de lista <li> */
+#lista > ol > li .duracao {
+    /* Define a largura para 15% do elemento pai */
     width: 15%;
+    /* Alinha o texto à direita */
     text-align: right;
 }
 
+/* Estiliza os itens de lista <li> quando o usuário passa o mouse sobre eles */
 #lista > ol > li:hover {
+    /* Altera a cor de fundo do item de lista para um tom de lilás (#d4c6ed) */
     background-color: #d4c6ed;
 }
 
+/* Estiliza a lista ordenada <ol> dentro do elemento com id "lista" */
 #lista > ol {
+    /* Coloca o marcador da lista dentro da área de conteúdo do item de lista */
     list-style-position: inside;
+    /* Remove o padding à esquerda da lista */
     padding-left: 0px;
 }
