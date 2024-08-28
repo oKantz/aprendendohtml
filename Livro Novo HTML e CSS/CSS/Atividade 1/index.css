@@ -1,0 +1,27 @@
+* {
+    font-family: sans-serif;
+}
+h3{
+    color: #1a6868;
+}
+li::marker{
+    color: #1a6868;
+    font-weight: bold;
+    font-style: italic;
+}
+li{
+    line-height: 30px;
+}
+input[type="checkbox"]:checked + p{
+    text-decoration: line-through;
+}
+li > input[type="checkbox"], li > p{
+    display: inline;
+}
+li > p{
+    color: black !important;
+}
+
+h1 {
+    color: #12787c;
+}

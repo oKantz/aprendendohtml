@@ -1,0 +1,119 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#topo > .capa{
+    width:25%;
+}
+
+#topo > .info {
+    width: 70%;
+    display: inline-block;
+}
+
+#lista > ol > li{
+    line-height: 2rem;
+    display: inline-block;
+    width: 100%;
+}
+
+#lista > ol > li > *{
+    box-sizing: content-box;
+    display: inline-block;
+}
+#lista > ol > li > a .artista{
+    width: 40%;
+}
+#lista > ol > li > a .musica{
+    width: 40%;
+}
+#lista > ol > li > a .duracao{
+    width: 20%;
+    text-align: right;
+}
+
+#lista > ol > li:target {
+    background-color: #d4c6ed;
+}
+
+#lista > ol {
+    list-style-position: inside;
+    padding-left: 0px;
+}
+
+#lista > ol > li > a {
+    display: flex;
+    flex-wrap:wrap;
+    text-decoration: none;
+    color: #333;
+}
+
+
+#lista > ol > li .clip {
+    display: none !important;
+}
+
+#lista > ol > li:target > .clip{
+    display: flex !important;
+    padding: 10px;
+    position: fixed;
+    background-color: #ddeeff;
+    border: 1px solid #333;
+    top:10%;
+    width: 70vw;
+    left:calc(50% - 35vw);
+    flex-wrap: wrap;
+}
+
+#lista > ol > li .clip > .info {
+    display: inline-block;
+    width: 70%;
+}
+
+#lista > ol > li .clip > img {
+    width: 30%;
+    margin-right: 10px;
+}
+
+#lista > ol > li:target > .overlay {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: #333333;
+    top: 0;
+    left: 0;
+    opacity: .6;
+    background-size: contain;
+    filter: blur(10px);
+}
+
+#lista > ol > li:target > .clip > a.close {
+    position: absolute;
+    right: -.6rem;
+    top: -.6rem;
+    text-decoration: none;
+    color: #333;
+    background-color: #FFF;
+    width: 1.2rem;
+    height: 1.2rem;
+    line-height: 1.2rem;
+    text-align: center;
+    border-radius: 1rem;
+}
+
+@media (max-width: 575.98px) { 
+
+    #topo .capa{
+        width: 80%;
+        display: block;
+        margin: 0 auto;
+    }
+
+    #lista > ol > li:target > .clip > img{
+        width: 80%;
+        display: block;
+        margin: 0 10%;
+    }
+
+
+}
